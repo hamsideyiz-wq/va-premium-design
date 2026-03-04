@@ -1,160 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>VA Premium Design | Metal Villa Tabelaları Ankara</title>
-
-<meta name="description" content="Ankara'da özel üretim metal villa tabelaları. Modern soyisim tabelası, adres tabelası ve LED halo villa tabelaları.">
-
-<meta name="keywords" content="villa tabela, metal tabela, soyisim tabelası, adres tabelası, LED tabela, Ankara metal tabela">
-
-<meta name="author" content="VA Premium Design">
-
-<style>
-
-body{
-font-family: Arial;
-margin:0;
-background:#0e0e0e;
-color:white;
-}
-
-header{
-background:black;
-padding:30px;
-text-align:center;
-}
-
-header h1{
-color:#d4af37;
-margin:0;
-}
-
-section{
-padding:40px;
-text-align:center;
-}
-
-.product{
-background:#1a1a1a;
-margin:20px auto;
-padding:20px;
-max-width:400px;
-border-radius:10px;
-}
-
-.product img{
-width:100%;
-border-radius:10px;
-}
-
-button{
-background:#d4af37;
-border:none;
-padding:12px 20px;
-font-size:16px;
-cursor:pointer;
-border-radius:5px;
-}
-
-footer{
-background:black;
-padding:20px;
-text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:20px;
-text-decoration:none;
-}
-
-</style>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VA Premium Design | Premium Villa Tabelaları (Ankara)</title>
+  <meta name="description" content="Fransız esintili premium metal villa tabelaları. Standart ve LED halo seçenekleri. Ankara özel üretim." />
+  <style>
+    :root{
+      --bg:#0b0b0e;
+      --card:#12121a;
+      --text:#f3f3f5;
+      --muted:#b8b8c2;
+      --gold:#caa24a;
+      --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(202,162,74,.12), transparent 55%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(255,255,255,.06), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1100px; margin:0 auto; padding:24px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:10px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      letter-spacing:.6px;
+    }
+    .logo{
+      width:40px; height:40px; border-radius:12px;
+      background: linear-gradient(145deg, rgba(202,162,74,.25), rgba(202,162,74,.05));
+      border:1px solid rgba(202,162,74,.35);
+      display:grid; place-items:center; font-weight:800; color:var(--gold);
+    }
+    .nav{display:flex; gap:14px; flex-wrap:wrap; color:var(--muted); font-size:14px}
+    .nav a{padding:8px 10px; border-radius:12px}
+    .nav a:hover{background:rgba(255,255,255,.05); color:var(--text)}
+    .hero{
+      display:grid; grid-template-columns: 1.1fr .9fr; gap:20px;
+      padding:26px 0 12px;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .hcard{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+    }
+    h1{margin:0 0 10px; font-size:38px; line-height:1.1}
+    .sub{color:var(--muted); font-size:16px; line-height:1.55; margin:0 0 18px}
+    .badges{display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 18px}
+    .badge{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .badge b{color:var(--text)}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      padding:12px 14px; border-radius:14px; border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      font-weight:650; font-size:14px;
+    }
+    .btn:hover{background:rgba(255,255,255,.07)}
+    .btn.gold{
+      border-color: rgba(202,162,74,.55);
+      background: linear-gradient(180deg, rgba(202,162,74,.22), rgba(202,162,74,.08));
+      color: var(--text);
+    }
+    .btn.gold:hover{background: linear-gradient(180deg, rgba(202,162,74,.28), rgba(202,162,74,.10));}
+    .showcase{
+      display:grid; gap:12px;
+    }
+    .ph{
+      aspect-ratio: 16/10;
+      border-radius:18px;
+      border:1px dashed rgba(202,162,74,.35);
+      background:
+        radial-gradient(700px 250px at 30% 20%, rgba(202,162,74,.16), transparent 60%),
+        rgba(255,255,255,.03);
+      display:grid; place-items:center;
+      color:rgba(202,162,74,.9);
+      font-weight:700;
+    }
+    .grid{
+      display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
+      margin:18px 0;
+    }
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    .card{
+      background: rgba(255,255,255,.03);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:16px;
+    }
+    .card h3{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px; line-height:1.55}
+    .price{
+      margin-top:12px; padding-top:12px; border-top:1px solid var(--line);
+      display:flex; justify-content:space-between; align-items:center;
+      color:var(--muted); font-size:14px;
+    }
+    .price b{color:var(--text); font-size:16px}
+    .section-title{margin:26px 0 10px; font-size:18px}
+    .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    @media (max-width:900px){ .steps{grid-template-columns:1fr} }
+    .step{padding:14px; border-radius:18px; border:1px solid var(--line); background: rgba(255,255,255,.02)}
+    .step .n{color:var(--gold); font-weight:800}
+    .footer{
+      margin-top:26px; padding:18px 0 8px; color:var(--muted); font-size:13px;
+      border-top:1px solid var(--line);
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .pill{display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.02)}
+    .small{font-size:12px; color:var(--muted)}
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">VA</div>
+        <div>
+          <div style="font-weight:800">VA Premium Design</div>
+          <div class="small">Ankara • Premium Metal Villa Tabelaları</div>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="#urunler">Ürünler</a>
+        <a href="#surec">Süreç</a>
+        <a href="#sss">SSS</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+    </div>
 
-<header>
+    <div class="hero">
+      <div class="hcard">
+        <h1>Villa girişiniz<br><span style="color:var(--gold)">sizi temsil eder.</span></h1>
+        <p class="sub">
+          Fransız esintili premium metal tabela tasarımları.
+          Standart ve <b>LED halo</b> seçenekleriyle Ankara’da özel üretim.
+        </p>
 
-<h1>VA Premium Design</h1>
+        <div class="badges">
+          <div class="badge"><b>2 mm</b> çelik</div>
+          <div class="badge"><b>Statik</b> boya</div>
+          <div class="badge"><b>Özel</b> tasarım</div>
+          <div class="badge"><b>Ankara</b> üretim</div>
+        </div>
 
-<p>Premium Metal Villa Tabelaları</p>
+        <div class="cta">
+          <!-- WhatsApp link: numarayı kendi numaranla değiştir (ülke kodu ile) -->
+          <a class="btn gold" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%20VA%20Premium%20Design%20i%C3%A7in%20tabela%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp’tan Teklif Al</a>
+          <!-- Instagram link: kullanıcı adını yaz -->
+          <a class="btn" href="https://instagram.com/vapremiumdesign" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn" href="#urunler">Modelleri Gör</a>
+        </div>
 
-</header>
+        <p class="small" style="margin-top:12px">
+          Not: Fiyatlar ölçü ve tasarıma göre değişebilir. %50 kapora ile üretime başlanır.
+        </p>
+      </div>
 
-<section>
+      <div class="showcase">
+        <div class="hcard">
+          <div class="ph">Buraya ürün görsellerini koyacağız</div>
+          <div class="small" style="margin-top:10px">
+            İpucu: LED gece fotoğrafı + gündüz yakın detay en iyi dönüşüm sağlar.
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>Ürünlerimiz</h2>
+    <h2 class="section-title" id="urunler">Ürünler</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Standart Metal Tabela</h3>
+        <p>Mat siyah statik boya, lazer kesim, spacer montaj. Minimal ve zamansız.</p>
+        <div class="price"><span>Başlangıç</span><b>2.190 TL + KDV</b></div>
+      </div>
+      <div class="card">
+        <h3>Adres / Numara Tabelası</h3>
+        <p>No + soyisim kombin. Site ve müstakil evlerde hızlı tercih edilir.</p>
+        <div class="price"><span>Başlangıç</span><b>1.990 TL + KDV</b></div>
+      </div>
+      <div class="card">
+        <h3>Premium LED Halo</h3>
+        <p>Arka LED halo aydınlatma, alüminyum arka kasa, premium montaj.</p>
+        <div class="price"><span>Başlangıç</span><b>7.490 TL + KDV</b></div>
+      </div>
+    </div>
 
-<div class="product">
+    <h2 class="section-title" id="surec">Süreç</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1) Bilgi</div><div class="small">İsim, ölçü, LED isteği</div></div>
+      <div class="step"><div class="n">2) Tasarım</div><div class="small">Ücretsiz tasarım önizleme</div></div>
+      <div class="step"><div class="n">3) Üretim</div><div class="small">%50 kapora ile başlar</div></div>
+      <div class="step"><div class="n">4) Teslim</div><div class="small">Ankara içi teslim / kargo</div></div>
+    </div>
 
-<img src="https://images.unsplash.com/photo-1581092160607-ee22731c3d8a">
+    <h2 class="section-title" id="sss">SSS</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Dış mekana dayanıklı mı?</h3>
+        <p>Evet. Çelik + statik boya ile uzun ömürlüdür. (Deniz kenarı için ekstra koruma önerilir.)</p>
+      </div>
+      <div class="card">
+        <h3>Teslim süresi?</h3>
+        <p>Standart: 3–5 iş günü. LED: 5–7 iş günü (yoğunluğa göre değişebilir).</p>
+      </div>
+      <div class="card">
+        <h3>Montaj nasıl?</h3>
+        <p>Spacer sistem. İstersen montaj şablonu ile kolay kurulum yapılır.</p>
+      </div>
+    </div>
 
-<h3>Modern Soyisim Tabelası</h3>
+    <h2 class="section-title" id="iletisim">İletişim</h2>
+    <div class="card">
+      <p style="margin:0 0 10px; color:var(--muted)">
+        Teklif için WhatsApp’tan yaz. İsim + ölçü + LED isteği yeter.
+      </p>
+      <div class="cta">
+        <a class="btn gold" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%20VA%20Premium%20Design%20i%C3%A7in%20tabela%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="mailto:info@vapremiumdesign.com">E-posta</a>
+      </div>
+      <p class="small" style="margin-top:10px">
+        * WhatsApp numaranı eklemek için linkteki 905315888649 kısmını kendi numaranla değiştir.
+      </p>
+    </div>
 
-<p>Mat siyah lazer kesim metal tabela.</p>
+    <div class="footer">
+      <span class="pill">© <span id="y"></span> VA Premium Design</span>
+      <span class="small">Ankara • Özel üretim premium metal tasarım</span>
+    </div>
+  </div>
 
-<p><b>2.190 TL</b></p>
-
-</div>
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-
-<h3>Adres + Soyisim Tabelası</h3>
-
-<p>Modern ev numarası ve isim tabelası.</p>
-
-<p><b>1.990 TL</b></p>
-
-</div>
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-
-<h3>LED Halo Villa Tabelası</h3>
-
-<p>Arkadan aydınlatmalı premium tabela.</p>
-
-<p><b>7.490 TL</b></p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Nasıl Sipariş Verilir?</h2>
-
-<p>1️⃣ İsim ve ölçü gönder</p>
-
-<p>2️⃣ Tasarım hazırlayalım</p>
-
-<p>3️⃣ Üretime geçelim</p>
-
-<p>4️⃣ Teslim edelim</p>
-
-</section>
-
-<footer>
-
-<p>© VA Premium Design | Ankara</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/905555555555">💬</a>
-
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
